@@ -6,170 +6,470 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Anton|Dosis:400,800" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/2ee2f06f50.js" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
+  <!----------------------------------------------------------------------------
 
-    <!----------------------------------------------------------------------------
-
-                        Barra superior
+                        Cabecera
 
 ------------------------------------------------------------------------------>
-    <!-- Titulo -->
-    <header background-color class="container-fluid" 
-    style="background-color:grey;">
-      <div class="row">
-          <div class="col-12">
-            <div><!--Logo  -->
-              <h3 class="font-italic"><i class="fab fa-instagram"></i>   Instagram</h3>
-              
-            </div><!-- Fin Logo  -->
-            <div class="d-flex justify-content-end"><!--Botones -->
-              <button type="button" class="btn btn-success" >Crear nuevo post</button>
-              
-              <div class="dropdown mr-5"><!--Botones desplegable -->
-                <button class="btn btn-secondary dropdown-toggle"
-                        type="button" id="dropdownMenu1" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-cog"></i>
-                </button>
-                <div class="dropdown-menu mr-5" aria-labelledby="dropdownMenu1">
-                  <a class="dropdown-item" href="#!">Opcion 1</a>
-                  <a class="dropdown-item" href="#!">Opcion 2</a>
-                  <a class="dropdown-item" href="#!">Opcion 3</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#!">Desconectarse</a>
-                </div>
-              </div> <!-- FinBotones desplegable -->
 
-            </div ><!-- Fin Botones -->
-        </div><!-- Fin col 12-->
-      </div><!-- Fin row -->
-    </header>
-    <!-- Fin Titulo -->
-    
-<!-- Titulo -->
-<div background-color class="container-fluid" 
-style="background-color:grey;">
-  <div class="row">
-      <div class="col-12">
-        <div><!--Logo  -->
-          <h3 class="font-italic"><i class="fab fa-instagram"></i>   Instagram</h3>
-          
-        </div><!-- Fin Logo  -->
-        <div class="d-flex justify-content-end"><!--Botones -->
-          <button type="button" class="btn btn-success" >Crear nuevo post</button>
-          
-          <div class="dropdown mr-5"><!--Botones desplegable -->
-            <button class="btn btn-secondary dropdown-toggle"
-                    type="button" id="dropdownMenu1" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    <i class="fas fa-cog"></i>
-            </button>
-            <div class="dropdown-menu mr-5" aria-labelledby="dropdownMenu1">
-              <a class="dropdown-item" href="#!">Opcion 1</a>
-              <a class="dropdown-item" href="#!">Opcion 2</a>
-              <a class="dropdown-item" href="#!">Opcion 3</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#!">Desconectarse</a>
-            </div>
-          </div> <!-- FinBotones desplegable -->
-
-        </div ><!-- Fin Botones -->
-    </div><!-- Fin col 12-->
-  </div><!-- Fin row -->
+<div class="container-fluid mb-4" style="background-color:gray;">
+            <div class="row align-items-center mb-4" style="background-color:gray;">
+                <div class="col d-flex justify-content-between ">
+                  <p class="align-middle text-center text-lg-left">
+                    <h3 class="font-italic"><i class="fab fa-instagram"></i>   Instagram</h3>
+                  </p>
+                  <p class="display-2 text-center text-lg-left mb-4"></p>
+                  <div class="d-flex justify-content-end"><!--Botones -->
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Crear nuevo post</button>
+<!-- Modal -->
+<!-- Modal -->
+<div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Escriba o publique sus fotos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p ><textarea class="form-control" rows="1" placeholder="Ingrese comentario"></textarea></p >
+      </div>
+      <div class="ml-4 mb-2">
+        <button type="button" class="btn btn-outline-secondary"><i class="fas fa-camera"></i></button>
+        <button type="button" class="btn btn-outline-secondary"><i class="fas fa-map-marker-alt"></i></button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-success">Publicar</button>
+      </div>
+    </div>
+  </div>
 </div>
-<!-- Fin Titulo -->
-
+<!-- Fin modal -->
+                    
+                    <div class="dropdown mr-5"><!--Botones desplegable -->
+                      <button class="btn btn-secondary dropdown-toggle"
+                              type="button" id="dropdownMenu1" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">
+                              <i class="fas fa-cog"></i>
+                      </button>
+                      <div class="dropdown-menu mr-5" aria-labelledby="dropdownMenu1">
+                        <a class="dropdown-item" href="#!">Opcion 1</a>
+                        <a class="dropdown-item" href="#!">Opcion 2</a>
+                        <a class="dropdown-item" href="#!">Opcion 3</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#!">Desconectarse</a>
+                      </div>
+                    </div> <!-- FinBotones desplegable -->
+      
+                  </div ><!-- Fin Botones -->
+                </div>
+            </div>
+        </div>
 <!----------------------------------------------------------------------------
 
                         Menu
 
------------------------------------------------------------------------------->
-    <!-- Menu -->
-    <div class="container-fluid mt-3">
-      <div class="row">
-        <div class="col-12 d-flex justify-content-center">
-          <a href="index.html" class="btn btn-outline-secondary active" role="button" aria-pressed="true"><i class="fas fa-th"></i></a>
-          <a href="insta.html" class="btn btn-outline-secondary" role="button" aria-pressed="true"><i class="far fa-square"></i></a>
-
-          </nav>
-        </div>
-      </div>
+------------------------------------------------------------------------------>    
+<section class="container">
+  <nav class="nav justify-content-center mt-3 mb-3">
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fas fa-th"></i></a><!-- menu 1 -->
+      <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="far fa-square"></i></a><!-- Menu 2 -->
     </div>
-    
+  </nav>
+  <!--  -->
 <!----------------------------------------------------------------------------
 
-                        Inicio de contido
+                        Opciones menu
 
+------------------------------------------------------------------------------> 
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+<!---------------------------------------------------------------------------
+                        menu 1
+------------------------------------------------------------------------------> 
+<div class="card-group">
+  <div class="card">
+    <img src="/img/card_ (0).jpg" class="card-img-top" alt="img 0">
+  </div>
+  <div class="card">
+    <img src="/img/card_ (1).jpg" class="card-img-top" alt="img 1">
+  </div>
+  <div class="card">
+    <img src="/img/card_ (2).jpg" class="card-img-top" alt="img 2">
+  </div>
+</div>
+<div class="card-group ">
+  <div class="card">
+    <img src="/img/card_ (3).jpg" class="card-img-top" alt="img 3">
+  </div>
+  <div class="card">
+    <img src="/img/card_ (4).jpg" class="card-img-top" alt="img 4">
+  </div>
+  <div class="card">
+    <img src="/img/card_ (5).jpg" class="card-img-top" alt="img 5">
+  </div>
+</div>
+<div class="card-group mb-4">
+  <div class="card">
+    <img src="/img/card_ (6).jpg" class="card-img-top" alt="img 06">
+  </div>
+  <div class="card">
+    <img src="/img/card_ (7).jpg" class="card-img-top" alt="img 07">
+  </div>
+  <div class="card">
+    <img src="/img/card_ (8).jpg" class="card-img-top" alt="img 08">
+  </div>
+</div>
+
+<!---------------------------------------------------------------------------
+                        Fin menu 1
 ------------------------------------------------------------------------------>
-    
-    <!-- <h2 class="lecture-title">Index</h2> -->
-
-    <!-- Con container deja bordes de igual manera a la derecha y a la izquierda -->
-    <!-- container-fluid aplica el 100% de la pantalla -->
-    <!-- col-12 col-sm-6 col-md-8 col-lg10" para -->
-
-    <main class="container-fluid mt-4 mb-4">  
-      <div class="row"><!-- inicio de row -->
-          <div class="col-12 col-md-6 col-xl-4"><!-- inicio de imagen -->
-              <div class="card ">
-                <img src="img/card_01.jpg" class="card-img-top img-fluid">
-              </div>
-          </div><!-- fin de imagen -->
-          <div class="col-12 col-md-6 col-xl-4"><!-- inicio de imagen -->
-            <div class="card ">
-              <img src="img/card_01.jpg" class="card-img-top img-fluid">
-            </div>
-        </div><!-- fin de imagen -->
-        <div class="col-12 col-md-6 col-xl-4"><!-- inicio de imagen -->
-          <div class="card ">
-            <img src="img/card_02.jpg" class="card-img-top img-fluid">
-          </div>
-      </div><!-- fin de imagen -->
-      <div class="col-12 col-md-6 col-xl-4"><!-- inicio de imagen -->
-        <div class="card ">
-          <img src="img/card_03.jpg" class="card-img-top img-fluid">
-        </div>
-    </div><!-- fin de imagen -->
-    <div class="col-12 col-md-6 col-xl-4"><!-- inicio de imagen -->
-      <div class="card ">
-        <img src="img/card_01.jpg" class="card-img-top img-fluid">
-      </div>
-  </div><!-- fin de imagen -->
-  <div class="col-12 col-md-6 col-xl-4"><!-- inicio de imagen -->
-    <div class="card ">
-      <img src="img/card_02.jpg" class="card-img-top img-fluid">
     </div>
-</div><!-- fin de imagen -->
-<div class="col-12 col-md-6 col-xl-4"><!-- inicio de imagen -->
-  <div class="card ">
-    <img src="img/card_03.jpg" class="card-img-top img-fluid">
-  </div>
-</div><!-- fin de imagen -->
-<div class="col-12 col-md-6 col-xl-4"><!-- inicio de imagen -->
-  <div class="card ">
-    <img src="img/card_01.jpg" class="card-img-top img-fluid">
-  </div>
-</div><!-- fin de imagen -->
-<div class="col-12 col-md-6 col-xl-4"><!-- inicio de imagen -->
-  <div class="card ">
-    <img src="img/card_02.jpg" class="card-img-top img-fluid">
-  </div>
-</div><!-- fin de imagen -->
-<div class="col-12 col-md-6 col-xl-4"><!-- inicio de imagen -->
-  <div class="card ">
-    <img src="img/card_03.jpg" class="card-img-top img-fluid">
-  </div>
-</div><!-- fin de imagen -->
-        </div><!-- Fin de row -->
-    </main>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+<!---------------------------------------------------------------------------
+                        menu 2
+------------------------------------------------------------------------------>
+<div class="container-fluid mt-4 mb-4 ">
+  <div class="row d-flex justify-content-center"><!-- Inicio row -->
+      <div class="col-12 col-md-6">
+          <div class="card mt-3 mb-3"> <!-- Inicio Card -->
+                  
+                  <div class="card-body"><!-- Inicio Cuerpo -->
+                      <div class="d-flex justify-content-between ">
+                          <div class="d-flex justify-content-start"><h5 class="card-title">Paisajes</h5>
+                          </div>
+                              <div class="d-flex justify-content-end">
+                                  <p>1/9</p>
+                              </div>
 
-  <footer>
-    <div></div>
-  </footer>  
+                      </div>
+                      
+                      <img src="/img/card_ (0).jpg" class="card-img-top img-fluid" alt="Primera imagen">
+                      <div clas="card-body">
+                          <p><strong>200 likes</strong></p>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, similique!</p>
+                          <p></p>
+                      
+                      </div>
+                      
+                      <div class="d-flex justify-content-between ">
+                          <div class="d-flex justify-content-start">
+                              <p><a href="#" class="btn btn-link"><i class="far fa-heart fa-1x"></i></a></p>
+                              <p ><textarea class="form-control" rows="1" cols="50" placeholder="Ingrese comentario"></textarea></p >
+                              
+                          </div>
+                          <div class="d-flex justify-content-end ">
+                          <p ><button type="button" class="btn btn-link"><i class="fas fa-ellipsis-v"></i></button></p>
+                          </div>
+
+                          
+                      </div>
+                      
+                  </div><!-- Fin Cuerpo -->
+          </div><!-- fin Card -->
+          <div class="card mt-3 mb-3"> <!-- Inicio Card -->
+                  
+            <div class="card-body"><!-- Inicio Cuerpo -->
+                <div class="d-flex justify-content-between ">
+                    <div class="d-flex justify-content-start"><h5 class="card-title">Paisajes</h5>
+                    </div>
+                        <div class="d-flex justify-content-end">
+                            <p>2/9</p>
+                        </div>
+
+                </div>
+                
+                <img src="/img/card_ (1).jpg" class="card-img-top img-fluid" alt="Primera imagen">
+                <div clas="card-body">
+                    <p><strong>200 likes</strong></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, similique!</p>
+                    <p></p>
+                
+                </div>
+                
+                <div class="d-flex justify-content-between ">
+                    <div class="d-flex justify-content-start">
+                        <p><a href="#" class="btn btn-link"><i class="far fa-heart fa-1x"></i></a></p>
+                        <p ><textarea class="form-control" rows="1" cols="50" placeholder="Ingrese comentario"></textarea></p >
+                        
+                    </div>
+                    <div class="d-flex justify-content-end ">
+                    <p ><button type="button" class="btn btn-link"><i class="fas fa-ellipsis-v"></i></button></p>
+                    </div>
+
+                    
+                </div>
+                
+            </div><!-- Fin Cuerpo -->
+          </div><!-- fin Card -->
+          <div class="card mt-3 mb-3"> <!-- Inicio Card -->
+                  
+      <div class="card-body"><!-- Inicio Cuerpo -->
+          <div class="d-flex justify-content-between ">
+              <div class="d-flex justify-content-start"><h5 class="card-title">Paisajes</h5>
+              </div>
+                  <div class="d-flex justify-content-end">
+                      <p>3/9</p>
+                  </div>
+
+          </div>
+          
+          <img src="/img/card_ (2).jpg" class="card-img-top img-fluid" alt="Primera imagen">
+          <div clas="card-body">
+              <p><strong>200 likes</strong></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, similique!</p>
+              <p></p>
+          
+          </div>
+          
+          <div class="d-flex justify-content-between ">
+              <div class="d-flex justify-content-start">
+                  <p><a href="#" class="btn btn-link"><i class="far fa-heart fa-1x"></i></a></p>
+                  <p ><textarea class="form-control" rows="1" cols="50" placeholder="Ingrese comentario"></textarea></p >
+                  
+              </div>
+              <div class="d-flex justify-content-end ">
+              <p ><button type="button" class="btn btn-link"><i class="fas fa-ellipsis-v"></i></button></p>
+              </div>
+
+              
+          </div>
+          
+      </div><!-- Fin Cuerpo -->
+          </div><!-- fin Card -->
+          <div class="card mt-3 mb-3"> <!-- Inicio Card -->
+                  
+            <div class="card-body"><!-- Inicio Cuerpo -->
+                <div class="d-flex justify-content-between ">
+                    <div class="d-flex justify-content-start"><h5 class="card-title">Paisajes</h5>
+                    </div>
+                        <div class="d-flex justify-content-end">
+                            <p>4/9</p>
+                        </div>
+      
+                </div>
+                
+                <img src="/img/card_ (3).jpg" class="card-img-top img-fluid" alt="Primera imagen">
+                <div clas="card-body">
+                    <p><strong>200 likes</strong></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, similique!</p>
+                    <p></p>
+                
+                </div>
+                
+                <div class="d-flex justify-content-between ">
+                    <div class="d-flex justify-content-start">
+                        <p><a href="#" class="btn btn-link"><i class="far fa-heart fa-1x"></i></a></p>
+                        <p ><textarea class="form-control" rows="1" cols="50" placeholder="Ingrese comentario"></textarea></p >
+                        
+                    </div>
+                    <div class="d-flex justify-content-end ">
+                    <p ><button type="button" class="btn btn-link"><i class="fas fa-ellipsis-v"></i></button></p>
+                    </div>
+      
+                    
+                </div>
+                
+            </div><!-- Fin Cuerpo -->
+          </div><!-- fin Card -->
+          <div class="card mt-3 mb-3"> <!-- Inicio Card -->
+                  
+                  <div class="card-body"><!-- Inicio Cuerpo -->
+                      <div class="d-flex justify-content-between ">
+                          <div class="d-flex justify-content-start"><h5 class="card-title">Paisajes</h5>
+                          </div>
+                              <div class="d-flex justify-content-end">
+                                  <p>5/9</p>
+                              </div>
+            
+                      </div>
+                      
+                      <img src="/img/card_ (4).jpg" class="card-img-top img-fluid" alt="Primera imagen">
+                      <div clas="card-body">
+                          <p><strong>200 likes</strong></p>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, similique!</p>
+                          <p></p>
+                      
+                      </div>
+                      
+                      <div class="d-flex justify-content-between ">
+                          <div class="d-flex justify-content-start">
+                              <p><a href="#" class="btn btn-link"><i class="far fa-heart fa-1x"></i></a></p>
+                              <p ><textarea class="form-control" rows="1" cols="50" placeholder="Ingrese comentario"></textarea></p >
+                              
+                          </div>
+                          <div class="d-flex justify-content-end ">
+                          <p ><button type="button" class="btn btn-link"><i class="fas fa-ellipsis-v"></i></button></p>
+                          </div>
+            
+                          
+                      </div>
+                      
+                  </div><!-- Fin Cuerpo -->
+          </div><!-- fin Card -->
+          <div class="card mt-3 mb-3"> <!-- Inicio Card -->
+                  
+            <div class="card-body"><!-- Inicio Cuerpo -->
+                <div class="d-flex justify-content-between ">
+                    <div class="d-flex justify-content-start"><h5 class="card-title">Paisajes</h5>
+                    </div>
+                        <div class="d-flex justify-content-end">
+                            <p>6/9</p>
+                        </div>
+      
+                </div>
+                
+                <img src="/img/card_ (5).jpg" class="card-img-top img-fluid" alt="Primera imagen">
+                <div clas="card-body">
+                    <p><strong>200 likes</strong></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, similique!</p>
+                    <p></p>
+                
+                </div>
+                
+                <div class="d-flex justify-content-between ">
+                    <div class="d-flex justify-content-start">
+                        <p><a href="#" class="btn btn-link"><i class="far fa-heart fa-1x"></i></a></p>
+                        <p ><textarea class="form-control" rows="1" cols="50" placeholder="Ingrese comentario"></textarea></p >
+                        
+                    </div>
+                    <div class="d-flex justify-content-end ">
+                    <p ><button type="button" class="btn btn-link"><i class="fas fa-ellipsis-v"></i></button></p>
+                    </div>
+      
+                    
+                </div>
+                
+            </div><!-- Fin Cuerpo -->
+          </div><!-- fin Card -->
+          <div class="card mt-3 mb-3"> <!-- Inicio Card -->
+                  
+            <div class="card-body"><!-- Inicio Cuerpo -->
+                <div class="d-flex justify-content-between ">
+                    <div class="d-flex justify-content-start"><h5 class="card-title">Paisajes</h5>
+                    </div>
+                        <div class="d-flex justify-content-end">
+                            <p>7/9</p>
+                        </div>
+      
+                </div>
+                
+                <img src="/img/card_ (6).jpg" class="card-img-top img-fluid" alt="Primera imagen">
+                <div clas="card-body">
+                    <p><strong>200 likes</strong></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, similique!</p>
+                    <p></p>
+                
+                </div>
+                
+                <div class="d-flex justify-content-between ">
+                    <div class="d-flex justify-content-start">
+                        <p><a href="#" class="btn btn-link"><i class="far fa-heart fa-1x"></i></a></p>
+                        <p ><textarea class="form-control" rows="1" cols="50" placeholder="Ingrese comentario"></textarea></p >
+                        
+                    </div>
+                    <div class="d-flex justify-content-end ">
+                    <p ><button type="button" class="btn btn-link"><i class="fas fa-ellipsis-v"></i></button></p>
+                    </div>
+      
+                    
+                </div>
+                
+            </div><!-- Fin Cuerpo -->
+          </div><!-- fin Card -->
+          <div class="card mt-3 mb-3"> <!-- Inicio Card -->
+                  
+            <div class="card-body"><!-- Inicio Cuerpo -->
+                <div class="d-flex justify-content-between ">
+                    <div class="d-flex justify-content-start"><h5 class="card-title">Paisajes</h5>
+                    </div>
+                        <div class="d-flex justify-content-end">
+                            <p>8/9</p>
+                        </div>
+      
+                </div>
+                
+                <img src="/img/card_ (7).jpg" class="card-img-top img-fluid" alt="Primera imagen">
+                <div clas="card-body">
+                    <p><strong>200 likes</strong></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, similique!</p>
+                    <p></p>
+                
+                </div>
+                
+                <div class="d-flex justify-content-between ">
+                    <div class="d-flex justify-content-start">
+                        <p><a href="#" class="btn btn-link"><i class="far fa-heart fa-1x"></i></a></p>
+                        <p ><textarea class="form-control" rows="1" cols="50" placeholder="Ingrese comentario"></textarea></p >
+                        
+                    </div>
+                    <div class="d-flex justify-content-end ">
+                    <p ><button type="button" class="btn btn-link"><i class="fas fa-ellipsis-v"></i></button></p>
+                    </div>
+      
+                    
+                </div>
+                
+            </div><!-- Fin Cuerpo -->
+          </div><!-- fin Card -->
+          <div class="card mt-3 mb-3"> <!-- Inicio Card -->
+                  
+            <div class="card-body"><!-- Inicio Cuerpo -->
+                <div class="d-flex justify-content-between ">
+                    <div class="d-flex justify-content-start"><h5 class="card-title">Paisajes</h5>
+                    </div>
+                        <div class="d-flex justify-content-end">
+                            <p>9/9</p>
+                        </div>
+      
+                </div>
+                
+                <img src="/img/card_ (8).jpg" class="card-img-top img-fluid" alt="Primera imagen">
+                <div clas="card-body">
+                    <p><strong>200 likes</strong></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, similique!</p>
+                    <p></p>
+                
+                </div>
+                
+                <div class="d-flex justify-content-between ">
+                    <div class="d-flex justify-content-start">
+                        <p><a href="#" class="btn btn-link"><i class="far fa-heart fa-1x"></i></a></p>
+                        <p ><textarea class="form-control" rows="1" cols="50" placeholder="Ingrese comentario"></textarea></p >
+                        
+                    </div>
+                    <div class="d-flex justify-content-end ">
+                    <p ><button type="button" class="btn btn-link"><i class="fas fa-ellipsis-v"></i></button></p>
+                    </div>
+      
+                    
+                </div>
+                
+            </div><!-- Fin Cuerpo -->
+          </div><!-- fin Card -->
+      </div>
+  </div><!-- Fin row -->
+</div>
+
+<!---------------------------------------------------------------------------
+                        Fin menu 2
+------------------------------------------------------------------------------>      
+    </div>
+  </div>
+
+</section>
+
+
+    
     <!-- Scrip  al final    -->
+    <script src="https://kit.fontawesome.com/2ee2f06f50.js" crossorigin="anonymous"></script>
     <script src="js/jquery.slim.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>

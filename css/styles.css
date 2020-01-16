@@ -1,5 +1,11 @@
 /*** Add your styles here **/
 
+body{
+  background-image: url(/img/fondo.jpg);
+  background-repeat: repeat;
+  background-size:contain;
+}
+
 header.site-header{
   background-color: #C2185B;
   height:250px;
@@ -55,3 +61,5 @@ header.entry-header h1 {
 .service {
   padding: 150px 0;
 }
+
+
